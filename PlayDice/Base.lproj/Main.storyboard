@@ -64,11 +64,14 @@
                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="L1x-eK-hP9"/>
-                                    <constraint firstAttribute="width" constant="349" id="hVy-5B-pN5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="349" id="hVy-5B-pN5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="tintColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Ramdom Dice"/>
+                                <connections>
+                                    <action selector="ramdomDiceButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="96q-Yv-6tB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -93,6 +96,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="FirstDicelmageView" destination="QJh-XW-ywY" id="qdN-aC-kWO"/>
+                        <outlet property="firstDicelmageView" destination="QJh-XW-ywY" id="eYX-er-tdH"/>
+                        <outlet property="secondDicelmageView" destination="YGK-rl-zSY" id="cI9-sn-Zi9"/>
+                        <outlet property="thirdDicelmageView" destination="Wdi-Qf-WKX" id="92k-BK-PFU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
